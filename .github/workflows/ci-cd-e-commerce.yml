@@ -45,6 +45,7 @@ jobs:
         with:
           node-version: 20
           cache: 'npm'
+      - run: npm install
       - name: Building Stage
         run: npm run build
 
