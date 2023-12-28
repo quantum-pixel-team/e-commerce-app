@@ -22,6 +22,6 @@ jobs:
           cache: 'npm'
       - run: npm install
       - run: npm run lint
-      - run: npm run test --no-watch --code-coverage --browsers ChromeHeadlessCI --source-map=false --watch false
+      - run: npm run test --no-watch --code-coverage --source-map=false --watch false
 
 
