@@ -22,6 +22,6 @@ jobs:
           cache: 'npm'
       - run: npm install
       - run: npm run lint
-      - run: npm run test --no-watch --code-coverage --source-map=false --watch false
+      - run: node --max_old_space_size=4096 node_modules/@angular/cli/bin/ng test --browsers ChromeNoGpu --source-map=false --watch
 
 
